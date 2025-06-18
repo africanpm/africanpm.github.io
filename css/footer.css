@@ -80,9 +80,3 @@
         width: 20px;
     }
 }
-
-@media (max-width:500px) {
-    #foot_side_bar img{
-        width: 16px;
-    }
-}

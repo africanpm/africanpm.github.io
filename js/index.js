@@ -99,7 +99,7 @@ if ($(window).innerWidth() <= 500) {
 
     // 
     $("#nav_form_input").blur(()=>{
-        $("#nav_form_input").css({"width":"auto"});
+        $("#nav_form_input").css({"width":"100px"});
         $("#sub_nav").css({"justify-content":"space-between"});
         $("#sub_nav_menu").fadeIn("slow");
     });

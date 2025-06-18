@@ -134,7 +134,7 @@
     #app_nav ul li h1{
         font-size: 2rem;
         margin-top: 1.5rem;
-        word-spacing: 5px;
+        word-spacing: 2px;
     }
 
     #nav_form input{
@@ -152,7 +152,7 @@
 @media (max-width:400px) {
     #app_nav ul li h1{
         font-size: 1.8rem;
-        word-spacing: 2px;
+        word-spacing: 1px;
     }
 
     #app_motto{

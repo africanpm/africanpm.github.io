@@ -308,6 +308,11 @@
         width: 100%;
     }
 
+    .top_side_landing li img{
+        width: 250px;
+        height: 250px;
+    }
+
     .top_main_landing q{
         padding: 1rem 5rem;
     }
@@ -331,5 +336,12 @@
     .mid_landing ul li a p{
         padding: 0;
         margin: 0;
+    }
+}
+
+@media (max-width:400px) {
+    .top_side_landing li img{
+        width: 200px;
+        height: 200px;
     }
 }

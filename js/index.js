@@ -90,8 +90,10 @@ $("#app_footer").html(app_footer);
 
 // animate input
 if ($(window).innerWidth() <= 500) {
+
     $("#nav_form_input").focus(()=>{
-        $("#sub_nav_menu").fadeOut(()=>{
+
+        $("#sub_nav_menu").fadeOut("fast", ()=>{
             $("#sub_nav").css({"justify-content":"right"});
             $("#nav_form_input").css({"width":"300px"});
         });
@@ -99,8 +101,14 @@ if ($(window).innerWidth() <= 500) {
 
     // 
     $("#nav_form_input").blur(()=>{
+
+        $("#sub_nav").css({"justify-content":"right"});
         $("#nav_form_input").css({"width":"100px"});
-        $("#sub_nav").css({"justify-content":"space-between"});
-        $("#sub_nav_menu").fadeIn("slow");
+
+        setTimeout(() => {
+           $("#sub_nav_menu").fadeIn("fast", ()=>{
+                $("#sub_nav").css({"justify-content":"space-between"});
+           }); 
+        }, 100);
     });
 }

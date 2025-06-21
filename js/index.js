@@ -71,7 +71,7 @@ $("#app_nav").html(appNav)
 let mainJson = "";
 $.ajax({
     url: "./json/main.json",
-    type: "POST",
+    type: "GET",
     async: false,
     success:function(res){
         mainJson = res;

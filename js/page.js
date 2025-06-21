@@ -2,7 +2,7 @@
 let blogPost = "";
 $.ajax({
     url: "./json/headlines.json",
-    type: "POST",
+    type: "GET",
     async: false,
     success:function(res){
         blogPost = res;
@@ -164,7 +164,7 @@ function pageLoader(x) {
 
         if (blogPost[i].id == x) {
 
-            $.post(`./pages/${blogPost[i].category}/${blogPost[i].id}.html`, (res)=>{
+            $.get(`./pages/${blogPost[i].category}/${blogPost[i].id}.html`, (res)=>{
                 if (res) {
                     $("#app_loading").fadeIn("slow", ()=>{
                         $("#app_main").html(res);

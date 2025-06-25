@@ -372,7 +372,7 @@
     /*  */
 
     #my_article{
-        padding: 0rem 2.5rem;
+        padding: 0rem 2.5rem 0rem 0.8rem;
     }
 
     .artice_text{
@@ -381,7 +381,7 @@
     }
 
     .article_first_para::first-letter{
-        margin-left: 2rem;
+        margin-left: 1rem;
         font-size: 1.5rem;
     }
 
@@ -389,8 +389,28 @@
         font-size: 1.3rem;
     }
 
+    .artice_bullet_list{
+        padding: 0.5rem;
+
+    }
+
+    .artice_bullet_list li{
+        margin: 0.8rem 1.5rem;
+    }
+
+    #my_article details summary{
+        font-size: smaller;
+        margin: 0.5rem 0rem;
+    }
+
+    #my_article details p{
+        margin: 0.8rem 0rem;
+        line-height: 1.2;
+        padding: 0rem 1.5rem;
+
+    }
+
     #article_subcover{
-        /* object-fit: contain; */
         float: none;
         width: 100%;
         max-height: auto;
@@ -398,6 +418,7 @@
 
     #article_suggestion a{
         font-size: smaller;
+        text-align: left;
     }
 
     #article_suggestion a img{
@@ -424,10 +445,6 @@
     }
 
     /*  */
-
-    #my_article{
-        padding: 0rem 2.5rem 0rem 0.8rem;
-    }
 
     .top_article_container h2{
         font-size: 1.2rem;

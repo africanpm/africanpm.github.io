@@ -390,7 +390,7 @@
     }
 
     #article_subcover{
-        object-fit: contain;
+        /* object-fit: contain; */
         float: none;
         width: 100%;
         max-height: auto;

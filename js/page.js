@@ -81,7 +81,71 @@ function getNavPage(x) {
 
 // search page
 function getSearchPage(x) {
-    $("#app_main").html(x)
+    // loop json
+
+    let search = "";
+
+    for (let i = 0; i < blogPost.length; i++) {
+        
+        if (blogPost[i].headline.toLowerCase().match(x.toLowerCase())) {
+
+            search += `
+                <li>
+                    <a href="./?">
+                        <img src="./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}" alt="Headline">
+                        <h4>${blogPost[i].headline}</h4>
+                    </a>
+                </li>            
+            `;
+        }
+        
+    }
+
+    setTimeout(() => {
+
+        if (search == "") {
+            let textArray = x.split(" ");
+
+        for (let j = 0; j < textArray.length; j++) {
+
+            for (let k = 0; k < blogPost.length; k++) {
+
+                if (blogPost[k].headline.toLowerCase().includes(textArray[j].toLowerCase()) || blogPost[k].quote.toLowerCase().includes(textArray[j].toLowerCase()) || blogPost[k].category.toLowerCase().includes(textArray[j].toLowerCase())) {
+
+                    search += `
+                        <li>
+                            <a href="./?">
+                                <img src="./gallery/${blogPost[k].category}/${blogPost[k].coverPhoto}" alt="Headline">
+                                <h4>${blogPost[k].headline}</h4>
+                            </a>
+                        </li>            
+                    `;
+                    
+                }
+            }
+        }
+
+        }
+       
+
+        // 
+    $("#app_main").html(`
+        <ol>
+            <button id="go_back_page">
+                <a href="./">&#10094; <span>Back</span></a>
+            </button>
+
+            <h2>Search Result</h2>
+
+            <div>
+                ${search}
+            </div>
+
+        </ol>
+    `)
+    }, 1000);
+
+    $("#nav_form_input").val(x.toLowerCase())
 }
 
 
@@ -256,12 +320,3 @@ function articleImageLoader() {
 function getHashTageLink(x) {
     pageLoader(x.getAttribute("href").slice(1))
 }
-
-// 
-// function goBackPage() {
-//     $("#app_loading").fadeIn("slow", ()=>{
-//         landingPage();
-//         $("#app_loading").fadeOut("slow");
-//     });
-    
-// }

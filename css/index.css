@@ -85,6 +85,12 @@ main{
     margin: 1rem 0rem;
 }
 
+@media (max-width:1030px) {
+    main{
+        min-height: 100dvh;
+    }
+}
+
 /*  */
 @keyframes loading {
     from{

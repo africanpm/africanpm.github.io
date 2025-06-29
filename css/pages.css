@@ -212,6 +212,59 @@
     border-radius: 5px;
 }
 
+/* search result */
+#search_result_container{
+    list-style: none;
+    margin: 0rem 5rem;
+}
+
+#search_result_container h2{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    border: 1px solid silver;
+    border-width: 0px 0px 1px 0px;
+    color: var(--ox-blood);
+    font-size: 2rem;
+}
+
+#search_result_container div li{
+    padding: 1rem;
+    margin: 1rem 0rem;
+    background-color: white;
+}
+
+#search_result_container div li:hover{
+    background-color: silver;
+}
+
+#search_result_container div li a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#search_result_container div li a h4{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: larger;
+}
+
+#search_result_container div li a img{
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    padding: 2px;
+    background-color: white;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 10px;
+}
+
+#search_result_container div li a q{
+    font-size: larger;
+    font-style: italic;
+}
+
 /*  */
 @media (max-width:1030px) {
     .sub_mid_pages ul{
@@ -263,6 +316,20 @@
     #article_suggestion a img{
         width: 100px;
         height: 60px;
+    }
+
+    /*  */
+    #search_result_container{
+        margin: 0rem 3rem;
+    }
+
+    #search_result_container div li a img{
+        width: 270px;
+        height: 150px;
+    }
+
+    #search_result_container div li a q{
+        font-size: 1rem;
     }
 }
 
@@ -347,6 +414,30 @@
     .top_article_container h2{
         font-size: 1.8rem;
     }
+
+    /*  */
+    #search_result_container h2{
+        font-size: 1.5rem;
+    }
+
+    #search_result_container{
+        margin: 0rem 3rem;
+    }
+
+    #search_result_container div li a{
+        flex-wrap: wrap;
+    }
+
+    #search_result_container div li a img{
+        display: flex;
+        margin: 0rem auto;
+        width: 100%;
+        height: auto;
+    }
+
+    #search_result_container div li a q{
+        font-size: 1rem;
+    }
 }
 
 @media (max-width:500px) {
@@ -409,8 +500,6 @@
     }
 
     #my_article details p{
-        /* margin: 0.8rem 0rem; */
-        /* line-height: 1.2; */
         padding: 1rem 1.5rem;
 
     }
@@ -430,6 +519,11 @@
     #article_suggestion a img{
         width: 100px;
         height: 50px;
+    }
+
+    /*  */
+    #search_result_container{
+        margin: 0rem 2.5rem 0rem 0.5rem;
     }
 }
 

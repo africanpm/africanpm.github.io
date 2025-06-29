@@ -91,9 +91,15 @@ function getSearchPage(x) {
 
             search += `
                 <li>
-                    <a href="./?">
-                        <img src="./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}" alt="Headline">
-                        <h4>${blogPost[i].headline}</h4>
+                    <a href="./?#${blogPost[i].id}">
+                        <section>
+                            <h4>${blogPost[i].headline}</h4>
+                            <img src="./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}" alt="Headline">
+                        </section>
+
+                        <q>
+                            ${blogPost[i].quote}
+                        </q>
                     </a>
                 </li>            
             `;
@@ -114,9 +120,15 @@ function getSearchPage(x) {
 
                     search += `
                         <li>
-                            <a href="./?">
-                                <img src="./gallery/${blogPost[k].category}/${blogPost[k].coverPhoto}" alt="Headline">
-                                <h4>${blogPost[k].headline}</h4>
+                            <a href="./?#${blogPost[i].id}">
+                                <section>
+                                    <h4>${blogPost[k].headline}</h4>
+                                    <img src="./gallery/${blogPost[k].category}/${blogPost[k].coverPhoto}" alt="Headline">
+                                </section>
+
+                                <q>
+                                    ${blogPost[k].quote}
+                                </q>
                             </a>
                         </li>            
                     `;
@@ -130,10 +142,12 @@ function getSearchPage(x) {
 
         // 
     $("#app_main").html(`
-        <ol>
-            <button id="go_back_page">
-                <a href="./">&#10094; <span>Back</span></a>
-            </button>
+
+        <button id="go_back_page">
+            <a href="./">&#10094; <span>Back</span></a>
+        </button>
+
+        <ol id="search_result_container">
 
             <h2>Search Result</h2>
 

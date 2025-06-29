@@ -122,9 +122,11 @@
 }
 
 #my_article details p{
-    margin: 1rem 0rem;
+    text-align: left;
     line-height: 1.2;
-    padding: 0rem 3rem;
+    padding: 1rem 3rem;
+    background-color: var(--ox-blood);
+    color: white;
 
 }
 
@@ -407,9 +409,9 @@
     }
 
     #my_article details p{
-        margin: 0.8rem 0rem;
-        line-height: 1.2;
-        padding: 0rem 1.5rem;
+        /* margin: 0.8rem 0rem; */
+        /* line-height: 1.2; */
+        padding: 1rem 1.5rem;
 
     }
 

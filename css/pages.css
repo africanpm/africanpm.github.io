@@ -520,6 +520,10 @@
         height: 50px;
     }
 
+    #article_quotes{
+        font-size: 0.9rem;
+    }
+
     /*  */
     #search_result_container{
         margin: 0rem 2.5rem 0rem 0.5rem;

@@ -168,10 +168,9 @@
     margin: 2rem 0rem 0.5rem 1rem;
     width: 350px;
     max-height: 350px;
-    padding: 2px;
-    box-shadow: 0px 0px 3px gray;
-    border-radius: 15px;
-    background-color: white;
+    box-shadow: 0px 0px 30px 5px white inset;
+    border-radius: 5px;
+    background-color: black;
 }
 
 .artice_bullet_list{
@@ -508,10 +507,7 @@
         float: none;
         width: 100%;
         max-height: 100%;
-        margin: 0rem;
-        padding: 0px;
-        box-shadow: none;
-        background-color: transparent;
+        margin: 1rem 0rem 0rem 0rem;
     }
 
     #article_suggestion a{

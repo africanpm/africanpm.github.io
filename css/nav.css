@@ -159,3 +159,9 @@
         font-size: 0.7rem;
     }
 }
+
+@media (max-width:330px) {
+    #app_nav ul li h1{
+        text-align: center;
+    }
+}

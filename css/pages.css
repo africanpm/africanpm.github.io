@@ -152,9 +152,7 @@
     color: var(--ox-blood);
     background-color: white;
     border-radius: 50%;
-    /* text-shadow: -1px 1px black; */
     box-shadow: 2px -1px 5px 0px black;
-    /* word-spacing: 2px; */
     overflow: auto;
 }
 
@@ -169,10 +167,10 @@
 #article_subcover{
     object-fit: cover;
     float: right;
-    margin: 2rem 0rem 0.5rem 1rem;
+    margin: 0.5rem 0rem 0.5rem 1rem;
     width: 350px;
     max-height: 350px;
-    box-shadow: 0px 0px 30px 5px white inset;
+    box-shadow: 0px 0px 30px 15px white inset;
     border-radius: 5px;
     background-color: black;
 }

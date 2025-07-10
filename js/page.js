@@ -32,10 +32,6 @@ else{
 
 // 
 function getAppPage(folder, name) {
-    // const loc = `./pages/${folder}/${name}.html`
-    // $.get(loc, (res)=>{
-    //     $("#app_main").html(res)
-    // })
     let x = `
         <p>${folder}</p>
         <p>${name}</p>
@@ -305,6 +301,9 @@ function articleImageLoader() {
 
         if (blogPost[i].headline.replace(".", "") == $("#article_header").text().replace(".", "")) {
             // console.log(blogPost[i])
+
+            $("#article_header").prepend(`<div id="time_stamp">${blogPost[i].date}</div>`)
+
             $("#article_cover").attr('src', `./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}`);
 
             $("#article_subcover").attr('src', `./gallery/${blogPost[i].category}/${blogPost[i].subPhoto}`);

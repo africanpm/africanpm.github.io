@@ -139,9 +139,13 @@
     }
 
     #nav_form input{
-        width: 100px;
+        width: 120px;
         padding: 0.2rem;
         font-size: 0.9rem;
+    }
+
+    #nav_form input::placeholder{
+        font-size: smaller;
     }
 }
 

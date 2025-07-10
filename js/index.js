@@ -137,7 +137,7 @@ if ($(window).innerWidth() <= 500) {
     $("#nav_form_input").blur(()=>{
 
         $("#sub_nav").css({"justify-content":"right"});
-        $("#nav_form_input").css({"width":"100px"});
+        $("#nav_form_input").css({"width":"120px"});
 
         setTimeout(() => {
            $("#sub_nav_menu").fadeIn("fast", ()=>{

@@ -52,7 +52,7 @@ let appNav = `
         </p>
 
         <form id="nav_form">
-            <input type="search" id="nav_form_input" placeholder="search">
+            <input type="search" id="nav_form_input" placeholder="search headlines">
             <button> <img src="./icons/search.svg" alt="search"> </button>
         </form>
     </div>
@@ -122,7 +122,14 @@ if ($(window).innerWidth() <= 500) {
 
         $("#sub_nav_menu").fadeOut("fast", ()=>{
             $("#sub_nav").css({"justify-content":"right"});
-            $("#nav_form_input").css({"width":"300px"});
+            
+            if ($(window).innerWidth() <= 330) {
+                $("#nav_form_input").css({"width":"250px"});
+            } 
+            else {
+                $("#nav_form_input").css({"width":"300px"});
+            }
+
         });
     });
 

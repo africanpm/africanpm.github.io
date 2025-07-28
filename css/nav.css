@@ -1,0 +1,171 @@
+#app_nav{
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8)),
+    url(../icons/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* padding: 1rem 0.5rem 0.5rem 0.5rem; */
+    position: relative;
+}
+
+
+#app_nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.3rem 0.5rem 0rem 0.5rem;
+}
+
+#app_nav ul li img{
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid var(--bronze);
+    padding: 2px;
+}
+
+#app_nav ul li h1{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-shadow: -5px -1px black;
+    border: 1px solid var(--bronze);
+    border-width: 0px 0px 1px 0px;
+    margin-top: 1rem;
+}
+
+#app_motto{
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0rem 1rem 0rem;
+    color: beige;
+    text-shadow: -2px -1px black;
+}
+
+#app_motto::first-letter{
+    text-transform: uppercase;
+}
+
+#sub_menu{
+    display: none;
+}
+
+#sub_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: var(--ox-blood);
+    padding: 0.3rem 0.5rem;
+}
+
+#sub_nav p b{
+    text-transform: uppercase;
+}
+
+#sub_nav button{
+    padding: 0rem 0.3rem;
+}
+
+#sub_nav button:hover{
+    color: var(--bright-yellow);
+}
+
+#nav_form{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+#nav_form input{
+    width: 300px;
+    background-color: white;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+#nav_form input::placeholder{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+#nav_form button{
+    height: 30px;
+    width: 30px;
+}
+
+/*  */
+@media (max-width:1030px) {
+    #app_nav ul li h1{
+        font-size: 2.5rem;
+    }
+
+    #app_motto{
+        font-size: smaller;
+    }
+
+    #nav_form button{
+        height: 27px;
+        width: 27px;
+    }
+
+    #sub_nav{
+        font-size: smaller;
+        padding: 0.2rem 0.3rem;
+    }
+}
+
+@media (max-width:650px) {
+    #app_nav ul li img{
+        display: none;
+    }
+
+    #app_nav ul li h1{
+        font-size: 2.4rem;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width:500px) {
+    #app_nav ul li h1{
+        font-size: 2rem;
+        margin-top: 1.5rem;
+        word-spacing: 2px;
+    }
+
+    #nav_form input{
+        width: 120px;
+        padding: 0.2rem;
+        font-size: 0.9rem;
+    }
+
+    #nav_form input::placeholder{
+        font-size: smaller;
+    }
+}
+
+@media (max-width:400px) {
+    #app_nav ul li h1{
+        font-size: 1.8rem;
+        word-spacing: 1px;
+    }
+
+    #app_motto{
+        font-size: 0.6rem;
+    }
+
+    #sub_nav{
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width:330px) {
+    #app_nav ul li h1{
+        text-align: center;
+    }
+}

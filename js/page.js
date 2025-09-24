@@ -53,7 +53,7 @@ function getNavPage(x) {
                 <li>
                     <a href="#${blogPost[i].id}" onclick="getHashTageLink(this)">
                         <h4>${blogPost[i].headline}</h4>
-                        <img src="./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}" alt="Headline">
+                        <img src="./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}" loading="lazy" alt="Headline">
                     </a>
                 </li>
             `;
@@ -90,7 +90,7 @@ function getSearchPage(x) {
                     <a href="./?#${blogPost[i].id}">
                         <section>
                             <h4>${blogPost[i].headline}</h4>
-                            <img src="./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}" alt="Headline">
+                            <img src="./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}" loading="lazy" alt="Headline">
                         </section>
 
                         <q>
@@ -119,7 +119,7 @@ function getSearchPage(x) {
                             <a href="./?#${blogPost[i].id}">
                                 <section>
                                     <h4>${blogPost[k].headline}</h4>
-                                    <img src="./gallery/${blogPost[k].category}/${blogPost[k].coverPhoto}" alt="Headline">
+                                    <img src="./gallery/${blogPost[k].category}/${blogPost[k].coverPhoto}" loading="lazy" alt="Headline">
                                 </section>
 
                                 <q>
@@ -168,7 +168,7 @@ function landingPage() {
         appendPost += `
             <li>
                 <a href="#${blogPost[i].id}" onclick="getHashTageLink(this)">
-                    <img src="./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}" alt="Headline">
+                    <img src="./gallery/${blogPost[i].category}/${blogPost[i].coverPhoto}" loading="lazy" alt="Headline">
                     <h4>${blogPost[i].headline.slice(0, 20)} <i style="font-weight:500; font-size:smaller; color:gray">...</i></h4> 
                 </a>
             </li>
@@ -190,7 +190,7 @@ function landingPage() {
             politicalPost += `
                 <li>
                     <a href="#${blogPost[j].id}" onclick="getHashTageLink(this)">
-                        <img src="./gallery/${blogPost[j].category}/${blogPost[j].coverPhoto}" alt="Sub Headline">
+                        <img src="./gallery/${blogPost[j].category}/${blogPost[j].coverPhoto}" loading="lazy" alt="Sub Headline">
                         <h4>${blogPost[j].headline}</h4>
                         <p>${blogPost[j].quote.slice(0, 50)} ${moreTage}</p>
                     </a>
@@ -203,7 +203,7 @@ function landingPage() {
             economicsPost += `
                 <li>
                     <a href="#${blogPost[j].id}" onclick="getHashTageLink(this)">
-                        <img src="./gallery/${blogPost[j].category}/${blogPost[j].coverPhoto}" alt="SUb Headline">
+                        <img src="./gallery/${blogPost[j].category}/${blogPost[j].coverPhoto}" loading="lazy" alt="SUb Headline">
                         <h4>${blogPost[j].headline}</h4>
                         <p>${blogPost[j].quote.slice(0, 50)} ${moreTage}</p>
                     </a>
@@ -330,7 +330,7 @@ function articleImageLoader() {
                 <hr>
                 <p>You may also like: </p>
                 <a href="./?#${blogPost[randNum].id}" target="_blank" rel="noopener noreferrer">
-                    <img src="./gallery/${blogPost[randNum].category}/${blogPost[randNum].coverPhoto}" alt="">
+                    <img src="./gallery/${blogPost[randNum].category}/${blogPost[randNum].coverPhoto}" loading="lazy" alt="">
                     <h4>${blogPost[randNum].headline.slice(0, 100)} ...</h4>
                 </a>    
             `)

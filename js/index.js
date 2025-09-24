@@ -30,7 +30,7 @@ const desc = params.get("desc");
 let appNav = `
     <ul>
         <li>
-            <a href="./"><img src="./icons/favicon.png" alt="African PM"></a>
+            <a href="./"><img src="./icons/favicon.png" loading="lazy" alt="African PM"></a>
         </li>
 
         <li>
@@ -53,13 +53,13 @@ let appNav = `
 
         <form id="nav_form">
             <input type="search" id="nav_form_input" placeholder="search headlines">
-            <button> <img src="./icons/search.svg" alt="search"> </button>
+            <button> <img src="./icons/search.svg" loading="lazy" alt="search"> </button>
         </form>
     </div>
 
     <div id="app_loading">
         <p></p>
-        <img src="./icons/favicon.png" alt="Please with">
+        <img src="./icons/favicon.png" loading="lazy" alt="Please with">
     </div>
 `;
 $("#app_nav").html(appNav)
@@ -86,18 +86,18 @@ let updateYear = currentDate.getFullYear();
 
 let app_footer = `
     <section id="foot_side_bar">
-        <a href="#"><img src="./icons/home.svg" alt="Home"></a>
+        <a href="#"><img src="./icons/home.svg" loading="lazy" alt="Home"></a>
 
         <a href="${mainJson[0].facebook}" target="_blank" rel="noopener noreferrer">
-            <img src="./icons/facebook.svg" alt="facebook">
+            <img src="./icons/facebook.svg" loading="lazy" alt="facebook">
         </a>
 
         <a href="${mainJson[0].youtube}" target="_blank" rel="noopener noreferrer">
-            <img src="./icons/youtube.svg" alt="youtube">
+            <img src="./icons/youtube.svg" loading="lazy" alt="youtube">
         </a>
 
         <a href="mailto:${mainJson[0].email}" target="_blank" rel="noopener noreferrer">
-            <img src="./icons/email.svg" alt="email">
+            <img src="./icons/email.svg" loading="lazy" alt="email">
         </a>
     </section>
 
@@ -108,7 +108,7 @@ let app_footer = `
 
         <li>
             <abbr title="African Political Mind">APM</abbr>
-            <img src="./icons/favicon.png" alt="African PM">
+            <img src="./icons/favicon.png" loading="lazy" alt="African PM">
         </li>
     </ul>
 `;
